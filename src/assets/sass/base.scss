@@ -1,0 +1,328 @@
+// 公共样式
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    font-size: 62.5%
+}
+
+body {
+    font-size: 12px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #414141;
+    padding: 14px;
+    background: #f2f2f2;
+    overflow: hidden;
+}
+
+input[type="button"],
+input[type="text"],
+button,
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.pull-bottom {
+    float: bottom !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.text-hide {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: ' ';
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    z-index: 1;
+}
+
+.line-limit-length {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; //文本不换行，这样超出一行的部分被截取，显示...
+}
+
+.h100 {
+    height: 100%;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.ivu-modal-body {
+    padding: 0;
+}
+
+.ivu-modal-footer {
+    display: none;
+}
+
+
+.m-title {
+    position: relative;
+    padding-left: 14px;
+    font-size: 14px;
+    color: #666;
+    font-weight: normal;
+    line-height: 1;
+    &::before {
+        position: absolute;
+        top: 3px;
+        left: 0;
+        content: '';
+        width: 8px;
+        height: 8px;
+        background: #3B95E9;
+    }
+}
+
+.sm-title {
+    position: relative;
+    padding-left: 8px;
+    font-size: 12px;
+    color: #666;
+    font-weight: normal;
+    line-height: 1;
+    &::before {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        content: '';
+        width: 2px;
+        height: 12px;
+        background: #666;
+    }
+
+}
+
+.alertShadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    > div{
+        margin: auto;
+        padding: 40px;
+        background: #FFFFFF;
+        border-radius: 4px;
+        max-height:80%;
+        // max-height: calc( 100% - 40px );  IE不兼容
+    }
+    .oneLine{
+        width: 410px;
+    }
+    .twoLine{
+        width: 695px;
+    }
+    .threeLine{
+        width: 995px;
+    }
+}
+
+.alert{
+    padding: 40px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    max-height: 100%;
+}
+
+.first-b{
+    padding-bottom: 14px;
+    border-bottom: 1px solid #f1f1f1;
+    margin-bottom: 14px;
+    .ivu-btn {
+        width: 80px;
+        margin-left: 14px;
+    }
+}
+.second-t{
+    height: 32px;
+    margin-bottom: 14px;
+    line-height: 32px;
+    .m-title{
+        display: inline;
+    }
+}
+//白色背景
+.singleWrapper{
+    background: #ffffff;
+    height: 100%;
+    padding: 14px;
+    border-radius: 4px;
+    display: flex;
+}
+
+//14px
+.p14 {
+    padding: 14px;
+}
+
+.pr14 {
+    padding-right: 14px;
+}
+.pl14 {
+    padding-left: 14px;
+}
+.pt14 {
+    padding-top: 14px;
+}
+.pb14 {
+    padding-bottom: 14px;
+}
+.mt14 {
+    margin-top: 14px;
+}
+.ml14 {
+    margin-left: 14px;
+}
+.mr14 {
+    margin-right: 14px;
+}
+.mb14 {
+    margin-bottom: 14px;
+}
+
+//28px
+.pr28 {
+    padding-right: 28px;
+}
+.pl28 {
+    padding-left: 28px;
+}
+.pt28 {
+    padding-top: 28px;
+}
+.pb28 {
+    padding-bottom: 28px;
+}
+.mt28 {
+    margin-top: 28px;
+}
+.ml28 {
+    margin-left: 28px;
+}
+.mr28 {
+    margin-right: 28px;
+}
+.mb28 {
+    margin-bottom: 28px;
+}
+.w100{
+    width: 100%;
+}
+.w0{
+    width: 0;
+}
+
+// 左右布局
+.ivu-table table{
+    width: 100% !important
+}
+
+.esk-form-item {
+    margin-bottom: 14px;
+}
+// 表单按钮
+.form-btn {
+    text-align: right;
+    padding-top: 14px;
+    .ivu-btn {
+        width: 80px;
+        margin-left: 14px;
+    }
+    .advanced-search {
+        position: relative;
+        color: #2d8cf0;
+        margin-right: 14px;
+    }
+}
+
+// 表单input宽度统一
+.alertShadow .ivu-input-wrapper, .alertShadow .ivu-select {
+    width: 180px;
+}
+
+.ivu-table-column-center {
+    height: 40px;
+}
+.ivu-form-item-error-tip{
+    padding-top: 3px;
+}
+.ivu-form-item{
+    margin-bottom: 14px;
+}
